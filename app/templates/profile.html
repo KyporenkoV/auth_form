@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+
+<div class="navigation">
+
+	<a class="button" href="/logout">
+  	<img src="{{url_for('static', filename='images/1.jpg')}}">
+<!--  	<img src="https://pbs.twimg.com/profile_images/378800000639740507/fc0aaad744734cd1dbc8aeb3d51f8729_400x400.jpeg">-->
+
+  <div class="logout">ВИЙТИ</div>
+
+	</a>
+
+</div>
+
+<div></div>
+
+<div class="welcome-msg cl">
+    <p>Добро пожаловать, <span>{{ username }}</span></p>
+</div>
+
+{% endblock %}

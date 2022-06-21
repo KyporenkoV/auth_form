@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<div class="welcome-msg incl">
+    <p>Неправильний логін або пароль<span>{{ username }}</span></p>
+    <p>Повернутись на головну <a href="{{url_for('index')}}">сторінку.</a></p>
+</div>
+{% endblock %}
